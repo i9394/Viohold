@@ -1,3 +1,8 @@
+---
+title: "Terms of Service"
+layout: default
+---
+
 # Terms of Service
 
 **Effective Date:** 2026-04-18

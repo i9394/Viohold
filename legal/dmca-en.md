@@ -1,3 +1,8 @@
+---
+title: "DMCA Policy"
+layout: default
+---
+
 # DMCA / Copyright Infringement Policy
 
 **Effective Date:** 2026-04-18
