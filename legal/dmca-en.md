@@ -6,16 +6,17 @@ layout: default
 # DMCA / Copyright Infringement Policy
 
 **Effective Date:** 2026-04-18
+**Last Updated:** 2026-08-25
 
 Zeroneo Studio, developer of the **Viohold** mobile application (the "App"), respects the intellectual property rights of others and expects users to do the same. This policy describes the procedure for reporting alleged copyright infringement, in accordance with Section 512 of the U.S. Digital Millennium Copyright Act ("DMCA") and comparable international frameworks.
 
 ## Our Approach
 
-The App's media-saving functionality is intended for legitimate uses (saving personal content, public domain material, or content for which the user has rights or permission). To minimize the risk of misuse:
+The App's "save web resource" feature is intended for legitimate uses (saving personal content, public domain material, or content for which the user has rights or permission). To minimize the risk of misuse:
 
-1. We maintain a **domain blocklist** that prevents media detection on major platforms. Current blocklist includes YouTube, Netflix, Disney+, Hulu, Prime Video, HBO Max, Paramount+, Peacock, Crunchyroll, Vimeo, Dailymotion, Apple TV+, Twitch, TikTok, Instagram, Facebook, Twitter/X, Threads, Tumblr, Snapchat, Reddit, Pinterest, LinkedIn, Bilibili, iQiyi, Youku, Tencent Video (v.qq.com), Mango TV, Sohu Video, Douyin, Toutiao, Xigua, Kuaishou, Weibo, Xiaohongshu, Douyu, Huya, BIGO, Spotify, Apple Music, SoundCloud, NetEase Music, QQ Music, Kuwo, Kugou, Tidal, Deezer, Pandora, Bandcamp, and Apple Podcasts — among others.
+1. We maintain a **domain blocklist** covering major content platforms; the saving feature is not enabled on those pages.
 2. We **respond to all valid DMCA notices within 24 hours** by adding the reported domain to our blocklist (effective immediately via remote blocklist update, and permanently in the next app release).
-3. The App does not provide a centralized media library or sharing mechanism — all saves are to the user's local device storage only.
+3. The App does not provide a centralized media library or sharing mechanism; all saves are to the user's local device storage only.
 
 ## Filing a DMCA Notification
 
