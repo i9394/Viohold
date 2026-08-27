@@ -6,7 +6,7 @@ layout: default
 # Privacy Policy
 
 **Effective Date:** 2026-04-18
-**Last Updated:** 2026-08-26
+**Last Updated:** 2026-08-27
 
 Zeroneo Studio ("we", "us", or "our") operates the **Cove** mobile application (the "App"). This Privacy Policy explains how we handle information when you use the App.
 
@@ -41,7 +41,6 @@ The App requests the following iOS permissions, all used **only on your device**
 |---|---|---|
 | Camera | Scanning QR codes to open URLs (the camera output is processed locally, not uploaded) | Optional |
 | Face ID / Touch ID | Unlocking the App when App Lock is enabled | Optional |
-| Photos (save only) | Saving images to Photos when the user explicitly requests | Optional |
 
 Denying any permission does not restrict other App functionality.
 
@@ -71,7 +70,7 @@ Collected information is used solely to investigate crashes and improve App stab
 Anonymous crash information is used internally by the development team for product improvement only. It is never shared with or sold to any third party. Full system diagnostic data remains only on your local device and is auto-deleted after 7 days.
 
 ### 6. Your Control
-You can disable "Send crash diagnostics automatically" at any time via **Settings → Privacy & Security → Diagnostics**. Once disabled, the App will not send any diagnostic information.
+You can disable "Send crash diagnostics automatically" at any time via **Settings → About**. Once disabled, the App will not send any diagnostic information.
 
 ## Third-Party Content and Services
 
