@@ -6,9 +6,9 @@ layout: default
 # Terms of Service
 
 **Effective Date:** 2026-04-18
-**Last Updated:** 2026-08-25
+**Last Updated:** 2026-08-26
 
-By installing or using the **Viohold** mobile application (the "App"), you agree to these Terms of Service ("Terms"). If you disagree with any part of the Terms, do not use the App.
+By installing or using the **Cove** mobile application (the "App"), you agree to these Terms of Service ("Terms"). If you disagree with any part of the Terms, do not use the App.
 
 ## 1. License
 

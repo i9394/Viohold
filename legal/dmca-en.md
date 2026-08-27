@@ -6,9 +6,9 @@ layout: default
 # DMCA / Copyright Infringement Policy
 
 **Effective Date:** 2026-04-18
-**Last Updated:** 2026-08-25
+**Last Updated:** 2026-08-26
 
-Zeroneo Studio, developer of the **Viohold** mobile application (the "App"), respects the intellectual property rights of others and expects users to do the same. This policy describes the procedure for reporting alleged copyright infringement, in accordance with Section 512 of the U.S. Digital Millennium Copyright Act ("DMCA") and comparable international frameworks.
+Zeroneo Studio, developer of the **Cove** mobile application (the "App"), respects the intellectual property rights of others and expects users to do the same. This policy describes the procedure for reporting alleged copyright infringement, in accordance with Section 512 of the U.S. Digital Millennium Copyright Act ("DMCA") and comparable international frameworks.
 
 ## Our Approach
 

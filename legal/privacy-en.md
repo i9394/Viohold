@@ -6,9 +6,9 @@ layout: default
 # Privacy Policy
 
 **Effective Date:** 2026-04-18
-**Last Updated:** 2026-08-25
+**Last Updated:** 2026-08-26
 
-Zeroneo Studio ("we", "us", or "our") operates the **Viohold** mobile application (the "App"). This Privacy Policy explains how we handle information when you use the App.
+Zeroneo Studio ("we", "us", or "our") operates the **Cove** mobile application (the "App"). This Privacy Policy explains how we handle information when you use the App.
 
 ## Summary
 
@@ -111,4 +111,4 @@ For privacy questions or data deletion requests:
 
 ---
 
-*This Privacy Policy applies only to the Viohold mobile application. It does not apply to third-party websites you visit through the App.*
+*This Privacy Policy applies only to the Cove mobile application. It does not apply to third-party websites you visit through the App.*
