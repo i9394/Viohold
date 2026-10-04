@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cove — Hold to save</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; font: 17px/1.5 -apple-system, system-ui, sans-serif; background: #f6f5f2; color: #26262b; }
+  main { max-width: 680px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 26px; margin: 8px 0 4px; }
+  p { margin: 4px 0 10px; }
+  h2 { font-size: 19px; margin: 22px 0 2px; }
+  img, video { display: block; width: 100%; height: auto; background: #d9d6cf; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .grid img { height: 100%; object-fit: cover; }
+  .grid .tall { grid-row: span 2; }
+  small { display: block; margin-top: 28px; opacity: .65; font-size: 13px; }
+  small a { color: inherit; }
+  @media (prefers-color-scheme: dark) { body { background: #1b1b1f; color: #ececf0; } img, video { background: #33333a; } }
+</style>
+</head>
+<body>
+<main>
+  <h1 data-t="title">See it. Hold it. Keep it.</h1>
+  <p data-t="intro">Try Cove on the video and pictures below. They are free to save.</p>
+
+  <h2 data-t="vidTitle">1. Save a video</h2>
+  <p data-t="vidHint">Play the video, then press and hold it and choose Save.</p>
+  <video src="caminandes-llamigos-excerpt.mp4" poster="poster.jpg" width="1280" height="720" controls playsinline preload="metadata"></video>
+
+  <h2 data-t="imgTitle">2. Save a picture</h2>
+  <p data-t="imgHint">Press and hold a picture, then choose Save.</p>
+  <div class="grid">
+    <img class="tall" src="terrace-portrait.jpg" width="1024" height="1536" alt="Woman on a seaside terrace">
+    <img src="mountain-lake.jpg" width="1672" height="941" alt="Mountain lake at sunrise">
+    <img src="lighthouse-night.jpg" width="1672" height="941" alt="Lighthouse under a night sky">
+    <img src="villa-pool.jpg" width="1672" height="941" alt="Villa with a pool by the sea" loading="lazy">
+    <img src="coast-drive.jpg" width="1672" height="941" alt="Red sports car on a coastal road" loading="lazy">
+  </div>
+
+  <small data-t="note">Saving works on supported webpages. Cove does not offer saving on some platforms or for protected content.</small>
+  <small>Video: excerpt from “Caminandes 3: Llamigos” © Blender Foundation · <a href="https://www.caminandes.com">caminandes.com</a>, licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Pictures were made for Cove.</small>
+</main>
+<script>
+  var T = {
+    "zh-Hans": { title: "看到喜欢的，长按就能留下", intro: "用下面的视频和图片试一试，它们都可以自由保存。", imgTitle: "2. 保存图片", imgHint: "长按任意一张图片，然后选择保存。", vidTitle: "1. 保存视频", vidHint: "先播放视频，再长按它并选择保存。", note: "保存功能适用于支持的网页；对部分平台和受保护的内容，Cove 不提供保存。" },
+    "zh-Hant": { title: "看到喜歡的，長按就能留下", intro: "用下面的影片和圖片試一試，它們都可以自由儲存。", imgTitle: "2. 儲存圖片", imgHint: "長按任一張圖片，然後選擇儲存。", vidTitle: "1. 儲存影片", vidHint: "先播放影片，再長按它並選擇儲存。", note: "儲存功能適用於支援的網頁；對部分平台和受保護的內容，Cove 不提供儲存。" },
+    "ja": { title: "気に入ったら、長押しで保存", intro: "下の動画と画像で試してみてください。どれも自由に保存できます。", imgTitle: "2. 画像を保存", imgHint: "画像を長押しして、保存を選びます。", vidTitle: "1. 動画を保存", vidHint: "動画を再生してから長押しし、保存を選びます。", note: "保存は対応するページで使えます。一部のサービスや保護されたコンテンツでは、Cove は保存機能を提供していません。" },
+    "ko": { title: "마음에 들면, 길게 눌러 저장", intro: "아래 동영상과 이미지로 직접 해 보세요. 모두 자유롭게 저장할 수 있어요.", imgTitle: "2. 이미지 저장", imgHint: "이미지를 길게 누른 뒤 저장을 선택하세요.", vidTitle: "1. 동영상 저장", vidHint: "동영상을 재생한 다음 길게 눌러 저장을 선택하세요.", note: "저장은 지원되는 웹페이지에서 사용할 수 있습니다. 일부 플랫폼과 보호된 콘텐츠에 대해서는 Cove가 저장 기능을 제공하지 않습니다." }
+  };
+  var l = (navigator.language || "en").toLowerCase();
+  var key = l.indexOf("zh") === 0 ? (/hant|tw|hk|mo/.test(l) ? "zh-Hant" : "zh-Hans") : l.slice(0, 2);
+  var d = T[key];
+  if (d) {
+    document.documentElement.lang = key;
+    document.title = "Cove — " + d.title;
+    document.querySelectorAll("[data-t]").forEach(function (e) { e.textContent = d[e.dataset.t]; });
+  }
+</script>
+</body>
+</html>
