@@ -6,108 +6,88 @@ layout: default
 # Privacy Policy
 
 **Effective Date:** 2026-04-18
-**Last Updated:** 2026-08-27
 
-Zeroneo Studio ("we", "us", or "our") operates the **Cove** mobile application (the "App"). This Privacy Policy explains how we handle information when you use the App.
+**Last Updated:** 2026-10-19
+
+Zeroneo Studio ("we", "us", or "our") operates **Cove Browser (Cove)**. This policy explains how the App handles information, including local storage, Apple iCloud, crash diagnostics and feedback.
 
 ## Summary
 
-- **We do not collect any personally identifiable information.**
-- All browsing history, bookmarks, local files, and settings stay on your device.
-- If the App crashes, an anonymous crash report is automatically sent to help us improve stability — you can turn this off in Settings.
-- The App does not contain third-party analytics, tracking SDKs, or advertising networks.
+- No Cove account is required. We do not use advertising or cross-app tracking SDKs.
+- Browsing history, website data and saved files are handled on your device. Bookmarks, home-page shortcuts and eligible open tabs can sync through your private Apple iCloud database, as explained below.
+- Crash summaries are sent automatically by default after a crash report becomes available. You can turn this off in Settings → About.
+- Feedback is sent only when you submit it. Crash summaries and feedback are delivered to our team through Feishu (Lark), a third-party service.
+- We do not sell your information or use diagnostics and feedback for targeted advertising.
 
-## Information Stored Locally on Your Device
+## Data on Your Device
 
-The following data is stored **only on your device** and never transmitted to us or any third party:
+Cove stores browsing history, cookies and website storage, tab sessions, saved files and their metadata, preferences, playback state and local diagnostic files to provide its features. The free video-save allowance and app-lock passcode are stored using the iOS Keychain. Local experience counters used to decide when to request an App Store rating are not sent to our team.
 
-| Data | Purpose |
-|---|---|
-| Browsing history | In-app history view |
-| Bookmarks | User bookmarks |
-| Open tabs | Tab session restore |
-| Saved files | File management |
-| Cookies | Maintaining login and browsing session |
-| App settings | User preferences |
-| Passcode and biometric | App lock, stored encrypted by iOS |
+Private tabs are excluded from history and iCloud tab sync. Closing all private tabs clears their temporary website data. Files you deliberately save remain in your file library until you delete them. Private browsing does not make you anonymous to websites or your network provider.
 
-You can delete all locally stored data at any time via the App's **Settings → Clear Cache** and **History → Clear All**, or by uninstalling the App.
+## Apple iCloud and Backups
 
-## Permissions
+When iCloud is available to Cove, bookmarks and custom home-page shortcuts use a private CloudKit database associated with your Apple Account. Open non-private web tabs can also sync, including their URLs, titles and order, together with an app-generated device identifier and a device display name used to distinguish your devices. This is not an advertising identifier. These records are not sent to our feedback service.
 
-The App requests the following iOS permissions, all used **only on your device**:
+In version 1.27.103, the in-app iCloud switch controls tab synchronization and which cross-device records are displayed. **Turning this switch off does not disable the underlying CloudKit storage for bookmarks and home-page shortcuts.** Use Cove's iCloud controls in iOS Settings to manage the App's access to iCloud. Turning synchronization off does not itself delete previously stored cloud records.
 
-| Permission | Purpose | Required? |
-|---|---|---|
-| Camera | Scanning QR codes to open URLs (the camera output is processed locally, not uploaded) | Optional |
-| Face ID / Touch ID | Unlocking the App when App Lock is enabled | Optional |
+The current version stores browsing history and downloaded-file records locally rather than in CloudKit. History previously synced by older versions may remain in your iCloud storage. Saved files are not automatically uploaded by Cove's tab/bookmark synchronization. Device backups or files you export to other storage services are governed by your system settings and the services you choose.
 
-Denying any permission does not restrict other App functionality.
+## Crash Diagnostics
 
-## Diagnostics and Crash Information
+Apple MetricKit may deliver crash, performance and other diagnostic payloads. Cove stores these locally. At startup, it removes local payload files older than seven days; this is not a seven-day deletion guarantee for messages already sent to our team.
 
-### 1. When We Collect
-When the App terminates unexpectedly (a crash), iOS generates a diagnostic report. The report is first stored locally on your device, and an anonymous summary is automatically reported on the App's next launch to help diagnose issues and improve stability.
+When automatic reporting is enabled and an unreported crash payload is available, Cove sends a summary through Feishu on a subsequent launch. Reporting is enabled by default and unsuccessful delivery may be retried on a later launch. The summary contains:
 
-### 2. What We Collect
-We collect only anonymous technical information needed for crash triage:
-- App version
-- Operating system version
-- Device model
-- Time of crash
+- App version and build number;
+- iOS version and device model;
+- the time the summary is prepared, not necessarily the time of the crash;
+- the number of local crash payload files.
 
-### 3. What We Do NOT Collect Through This Channel
-- Browsing history, URLs, or search queries
-- Downloaded files, playback history, or saved content
-- Account information, email, or phone number
-- Any device identifier used to track your identity
-- Location, contacts, photos, or any other privacy-sensitive permission data
+The summary does not include the full MetricKit payload, browsing history, URLs, search queries, saved files, an Apple Account, an advertising identifier or an app-generated device identifier. Our team uses it to investigate crashes and improve reliability. As with other internet requests, the receiving service processes connection information such as an IP address; we therefore do not describe this channel as absolutely anonymous.
 
-### 4. Purpose
-Collected information is used solely to investigate crashes and improve App stability. It is never used for advertising, user profiling, or any commercial analytics.
+You can disable **Auto-send Crash Diagnostics** in **Settings → About**. This stops future automatic summaries; it does not delete previously delivered messages or prevent local MetricKit storage. Manually submitted feedback is a separate choice.
 
-### 5. Storage and Sharing
-Anonymous crash information is used internally by the development team for product improvement only. It is never shared with or sold to any third party. Full system diagnostic data remains only on your local device and is auto-deleted after 7 days.
+## Feedback and Support
 
-### 6. Your Control
-You can disable "Send crash diagnostics automatically" at any time via **Settings → About**. Once disabled, the App will not send any diagnostic information.
+When you choose **Submit Feedback**, Cove sends your selected category, the text you enter, app version/build, iOS version, device model and submission time through Feishu to our team. If you include a webpage address, file name or contact detail, that information is included in your message. We do not automatically attach your browsing history, saved files or full diagnostic payloads. Avoid including passwords, authentication tokens or other sensitive information.
 
-## Third-Party Content and Services
+If you email us, we receive the email address and information you provide. We use feedback and support information to respond where contact details are available, troubleshoot issues and improve the App. A message can identify you if you include identifying details; it is not guaranteed to be anonymous.
 
-- **Web pages you visit**: The App is a web browser. Any website you visit may collect information about you according to its own privacy policy; we have no control over third-party websites.
-- **Public filter rules**: The App periodically downloads publicly maintained web filter rule files to improve browsing experience. This is a one-way download; no user data is sent.
-- **Safari Content Blocker**: Filter rules can be shared with the system Safari browser. All matching happens locally on your device; browsing data is not uploaded.
+## Services and Network Requests
 
-## Data We Do NOT Collect
+- **Apple:** iCloud handles synchronization under your Apple Account. App Store purchases and subscriptions are processed by Apple; Cove uses StoreKit transaction information to determine access to Pro. We do not receive your payment-card details. Apple's own services and privacy practices also apply.
+- **Feishu (Lark):** Receives and processes the crash summaries and feedback described above for delivery to our team. Messages are accessible to the team operating the feedback channel. They are not subject to the App's local seven-day diagnostic cleanup.
+- **Websites and search providers:** Requests go to the sites or providers you choose. They may receive URLs, queries, cookies and connection information under their own policies. Cove's ad filtering does not prevent all website data collection.
+- **Public rule and resource hosts:** Cove downloads filter rules and other public resources. The hosts receive normal connection information needed to serve requests. Cove does not attach your browsing history or saved files to filter-rule requests.
+- **Safari content blocker:** Rules are supplied to Safari for local matching; this feature does not send Safari browsing history to our team.
 
-- Your personal information (name, email, phone number, address).
-- Your location (the App does not request location permission).
-- Any device identifier used to track your identity.
-- Your browsing activity, search queries, or tab contents.
-- Any tracking data or advertising analytics.
+These providers may process data in different countries according to their infrastructure and policies. We do not promise that every service stores information in your country.
 
-> Note: After a crash, the App sends an anonymous crash report (see the "Diagnostics and Crash Information" section); this can be disabled in Settings.
+## Permissions and App Lock
 
-## Children's Privacy
+Camera access is optional and used to scan QR codes; Cove does not upload camera images through this feature. If you open a scanned URL, the destination receives an ordinary web request.
 
-The App is rated **17+** (App Store age rating) because it includes web browsing functionality, and third-party web content is outside our control. We do not knowingly collect any data from users under 17.
+Face ID or Touch ID is optional for app unlock. Authentication is handled by iOS. Cove receives the authentication result, not your facial or fingerprint templates. The app-lock passcode is stored in the device's Keychain. Denying these permissions prevents the corresponding feature, not ordinary browsing.
 
-## Copyright Notice
+## Retention, Deletion and Your Choices
 
-The App allows saving web page resources for offline access, similar to common browser features such as "Add to Reading List". Users are responsible for complying with applicable copyright laws.
+- Clear history in the history view, manage website data with the App's cache/data controls, and delete saved files separately in the file library. Clearing history or cache does not erase all other categories of data.
+- Manage synchronized records and backups through your Apple Account's iCloud storage settings. Deleting the App does not necessarily remove iCloud records, backups or Keychain items.
+- We retain support messages and crash summaries as needed to investigate issues and provide support, subject to service retention and applicable requirements. There is no automatic seven-day expiry for these messages. To request access, correction or deletion of information you have sent us, email the address below and provide enough context to locate the message. Without an account or identifying details, we may be unable to identify an individual crash summary. We will explain any applicable limits rather than promise deletion of data we cannot locate or control.
 
-To respect copyright, we maintain a **domain blocklist** covering major content platforms; the saving feature is not enabled on those pages. See the DMCA Policy for the copyright infringement notification process.
+## Children
 
-## Changes to This Policy
+Cove is a general-purpose browser and is not directed to children. Web content is outside our control. Follow the age rating and parental controls shown for your App Store region. If you believe a child has sent us personal information, contact us so we can investigate and address it.
 
-We may update this Privacy Policy from time to time. The "Last Updated" date will reflect the latest revision. Continued use of the App after changes means acceptance of the updated policy.
+## Saving Content
 
-## Contact
+Only save content you own or have permission to save. Source restrictions and the App's domain restrictions still apply. See our [copyright policy](dmca-en.html) for copyright notices.
 
-For privacy questions or data deletion requests:
+## Changes and Contact
 
-**Email:** kirakingdx@hotmail.com
+We will update the date above when this policy changes and provide additional notice or seek consent where required.
 
----
+For privacy questions or data requests: **kirakingdx@hotmail.com**.
 
-*This Privacy Policy applies only to the Cove mobile application. It does not apply to third-party websites you visit through the App.*
+This policy covers Cove, not the independent websites you visit or services you choose to use.
