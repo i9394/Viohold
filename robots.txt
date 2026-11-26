@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://i9394.github.io/Viohold/sitemap.xml

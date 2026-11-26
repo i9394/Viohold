@@ -92,6 +92,16 @@ Yes. Subscriptions renew automatically unless canceled at least 24 hours before 
 
 ---
 
+## Guides
+
+- [All Cove Browser Guides](guides/index.html)
+- [How to Save M3U8 / HLS Web Videos on iPhone (Without Shortcuts or a PC)](guides/save-m3u8-hls-videos-iphone.html)
+- [How to Stop Websites Opening Spam Ad Tabs When You Tap Play on iPhone](guides/stop-safari-popup-redirects-ios.html)
+- [How to Batch-Save Multiple Images from One Webpage on iPhone & iPad](guides/batch-save-webpage-images-iphone.html)
+- [Cove Browser vs. Aloha Browser vs. Safari + AdGuard (Honest 2026 Comparison)](guides/cove-vs-aloha-safari-adguard.html)
+
+---
+
 ## Legal
 
 - [Privacy Policy](privacy-en.html) · [隐私政策 (中文)](privacy-zh.html)
